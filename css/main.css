@@ -2041,6 +2041,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 1px solid #eee;
   border-radius: 10px;
   padding: 25px;
+  height: 350px;
+  
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -2051,6 +2053,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 .single-service p {
   margin-bottom: 0;
+  text-align: start;
 }
 .single-service:hover {
   background-color: #04091e;
@@ -3581,5 +3584,39 @@ body.mobile-nav-active #mobile-nav-toggle {
   .about-us-image {
     /* Adjust the width for smaller screens */
     max-width: 100%;
+  }
+  .mission-class{
+    display: flex !important;
+    flex-direction: column-reverse!important;
+    
+
+  }
 }
+@media (max-width: 768px) {
+  .about-us-image {
+    /* Adjust the width for smaller screens */
+    max-width: 100%;
+  }
+  .vision-class, .mission-class {
+    display: flex;
+    flex-direction: column;
+  }
+  .vision-heading, .mission-heading {
+    order: 1;
+  }
+  .vision-img, .mission-img {
+    order: 2;
+  }
+}
+
+@media (min-width: 769px) {
+  .vision-class {
+    flex-direction: row;
+  }
+  .mission-class {
+    flex-direction: row-reverse;
+  }
+}
+.single-feature{
+  height: 200px;
 }
