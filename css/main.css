@@ -3519,3 +3519,43 @@ body.mobile-nav-active #mobile-nav-toggle {
       width: 90%;
     }
   }
+  .mission-vision {
+   
+    padding: 0 15px;
+  }
+  .mission-vision .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .mission-vision .mission, .mission-vision .vision {
+    flex: 1 1 45%; /* Ensures that the divs take up approximately 45% of the container each */
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .mission-vision h2 {
+    font-size: 24px;
+    color: black;
+  }
+
+  .mission-vision p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .mission-vision span {
+    font-weight: bold;
+    color: black;
+  }
+
+  @media (max-width: 768px) {
+    .mission-vision .mission, .mission-vision .vision {
+      flex: 1 1 100%;
+      text-align: center;
+      padding: 10px;
+    }
+  }
